@@ -15,3 +15,27 @@
 #bear:hover #right-ear {
   transform: translate(0, -.6em);
 }
+
+#left-eye {
+  animation: eye-move 3s ease infinite;
+}
+
+#right-eye {
+  animation: eye-move 3s ease infinite;
+}
+
+@keyframes eye-move {
+
+  0% {
+    transform: translateX(0em);
+  }
+
+  50% {
+    transform: translateX(.5em);
+  }
+
+  100% {
+    transform: translateX(-.5em);
+  }
+
+}
