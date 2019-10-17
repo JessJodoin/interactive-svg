@@ -17,25 +17,33 @@
 }
 
 #left-eye {
-  animation: eye-move 3s ease infinite;
+  animation: eye-move 4s ease infinite;
 }
 
 #right-eye {
-  animation: eye-move 3s ease infinite;
+  animation: eye-move 4s ease infinite;
 }
 
 @keyframes eye-move {
 
   0% {
-    transform: translateX(0em);
+    transform: translateX(0);
   }
 
-  50% {
+  25% {
     transform: translateX(.5em);
   }
 
-  100% {
+  50% {
+    transform: translateX(0);
+  }
+
+  75% {
     transform: translateX(-.5em);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 
 }
